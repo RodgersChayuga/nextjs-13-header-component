@@ -1,9 +1,21 @@
 import React from 'react';
 
+import {
+  TopNavBar,
+  MainSection,
+  SideBar,
+  Footer,
+  RightArticle,
+} from '../sections';
+
 const page = () => {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+      <TopNavBar />
+      <SideBar />
+      <MainSection />
+      <RightArticle />
+      <Footer />
     </div>
   );
 };
