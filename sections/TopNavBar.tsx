@@ -1,14 +1,28 @@
-import React from 'react';
+'use client';
 
+import React from 'react';
+import { motion } from 'framer-motion';
+
+import styles from '../styles';
+import { navVariants } from '../utils/motion';
 import { Logo, SearchBar, Profile } from '../components';
 
 const TopNavBar = () => {
   return (
-    <div>
-      <Logo />
-      <SearchBar />
-      <Profile />
-    </div>
+    <motion.nav
+      variants={navVariants}
+      initial="hidden"
+      whileInView="show"
+      className={`${styles.xPaddings} py-8 relative`}
+    >
+      <div
+        className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
+      >
+        <Logo />
+        <SearchBar />
+        <Profile />
+      </div>
+    </motion.nav>
   );
 };
 

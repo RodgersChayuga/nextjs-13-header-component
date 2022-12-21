@@ -10,12 +10,12 @@ import {
 
 const page = () => {
   return (
-    <div>
+    <div className="bg-primary-white dark:bg-secondary-black overflow-hidden min-h-screen">
       <TopNavBar />
-      <SideBar />
+      {/* <SideBar />
       <MainSection />
       <RightArticle />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

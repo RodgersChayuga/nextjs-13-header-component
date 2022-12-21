@@ -11,8 +11,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-black': '#1A232E',
-        'secondary-white': '#c7c7c7',
+        'primary-white': '#e9d5ff',
+        'secondary-black': '#111827',
+        'secondary-purple': '#5b21b6',
       },
       transitionTimingFunction: {
         'out-flex': 'cubic-bezier(0.05, 0.6, 0.4, 0.9)',
